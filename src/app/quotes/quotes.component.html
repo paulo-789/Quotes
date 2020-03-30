@@ -10,10 +10,11 @@
         <h1>INSPIRATION QUOTES</h1>
         <hr>
         <ol>
-            <li *ngFor='let quotes of quotes'>
-                {{quotes.name}}
-                <app-quotes-detail [quotes]='quotes'></app-quotes-detail>
-            </li>
+            <div *ngFor='let quotes of quotes'>
+               <li> {{quotes.name}}</li>
+               <button (click)='toggleDetails(i)'>View Details</button>
+                <app-quotes-detail *ngif='quotes.showDescription'[quotes]='quotes'></app-quotes-detail>
+            </div>
         </ol>
     </div>
     
