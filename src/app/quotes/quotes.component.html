@@ -12,6 +12,7 @@
         <ol>
             <li *ngFor='let quotes of quotes'>
                 {{quotes.name}}
+                <app-quotes-detail [quotes]='quotes'></app-quotes-detail>
             </li>
         </ol>
     </div>
