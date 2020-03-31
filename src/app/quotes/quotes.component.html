@@ -6,17 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container-fluid">
         <h1>INSPIRATION QUOTES</h1>
         <hr>
+
+        <div class ="row">
+         <div class="col-md-6">   
         <ol>
             <div *ngFor='let quotes of quotes;let i = index'>
                <li> {{quotes.name}}</li>
-               <button (click)='toggleDetails(i)'>View Details</button>
+               <button (click)='toggleDetails(i)' class="btn btn-primary">View Details</button>
                 <app-quotes-detail *ngIf='quotes.showDescription'[quotes]='quotes'(isComplete)='completequotes ($event,i)'></app-quotes-detail>
             </div>
         </ol>
-    
-    
+    </div>
+    </div>
+    </div>
 </body>
 </html>
