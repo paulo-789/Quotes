@@ -6,17 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    
         <h1>INSPIRATION QUOTES</h1>
         <hr>
         <ol>
-            <div *ngFor='let quotes of quotes'>
+            <div *ngFor='let quotes of quotes;let i = index'>
                <li> {{quotes.name}}</li>
                <button (click)='toggleDetails(i)'>View Details</button>
-                <app-quotes-detail *ngif='quotes.showDescription'[quotes]='quotes'></app-quotes-detail>
+                <app-quotes-detail *ngIf='quotes.showDescription'[quotes]='quotes'></app-quotes-detail>
             </div>
         </ol>
-    </div>
+    
     
 </body>
 </html>

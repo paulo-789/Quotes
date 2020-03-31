@@ -8,7 +8,7 @@ import {Quotes} from '../quotes';
 })
 export class QuotesDetailComponent implements OnInit {
 
-  @input() quotes:Quotes;
+  @Input() quotes:Quotes;
   constructor() { }
 
   ngOnInit(){
