@@ -1,7 +1,7 @@
 body{
     background-image:linear-gradient(rgba( 0, 0, 0, 0.781), rgba(0, 0, 0, 0.788)),url("https://bit.ly/3dHNGj4");
     color:white;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     height:100%;
     width: 100%;
@@ -9,4 +9,10 @@ body{
     background-size: cover;
     background-attachment: fixed;
     
+}
+h1{
+    color:white;
+}
+.jumbotron{
+    background-color: green;
 }
