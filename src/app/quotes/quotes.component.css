@@ -1,8 +1,12 @@
 body{
-    background-image:url("https://bit.ly/2WWTa3B");
+    background-image:linear-gradient(rgba( 0, 0, 0, 0.781), rgba(0, 0, 0, 0.788)),url("https://bit.ly/3dHNGj4");
     color:white;
     font-size: 30px;
     text-align: center;
-    background-size: 100% 100%;
-    background-color: black;
+    height:100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
 }

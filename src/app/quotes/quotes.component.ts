@@ -14,6 +14,11 @@ export class QuotesComponent implements OnInit {
     new Quotes(3,'"Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning."','author___Rick Cook, The Wizardry Compiled'),
     new Quotes(4,'“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”','author___ Martin Fowler')
   ];
+  completequotes(isComplete,index){
+    if(isComplete){
+      this.quotes.splice(index,1);
+    }
+  }
   toggleDetails(index){
   this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
