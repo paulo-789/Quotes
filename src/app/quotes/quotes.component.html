@@ -12,7 +12,7 @@
     <div class="container">
 
         <div class ="row">
-         <div class="col-md-6">   
+         <div class="col-md-12">   
         <ol>
             <div *ngFor='let quotes of quotes;let i = index'>
                <li appStrikethrough> {{quotes.quotes}}</li>
@@ -27,8 +27,9 @@
             </div>
         </ol>
     </div>
-
-    <div class="col-md-6">
+</div>
+<div class= "row">
+    <div class="col-md-12">
     <app-quotes-form (addQuotes)="addNewQuotes($event)"></app-quotes-form>
     </div>
         </div> 
