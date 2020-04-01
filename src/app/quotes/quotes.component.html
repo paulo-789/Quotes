@@ -16,10 +16,11 @@
         <ol>
             <div *ngFor='let quotes of quotes;let i = index'>
                <li appStrikethrough> {{quotes.quotes}}</li>
-               <button (click)='addVote(i)' name="upvote" class="btn btn-info">like</button>
-               <p> {{quotes.upvote}}</p>
-               <button (click)='minusVote(i)' name="downvote" class="btn btn-info">dislike</button>
-              <p>{{quotes.downvote}}</p>
+               <img src="https://bit.ly/3aCnQLg"(click)='addVote(i)' name="upvote" class="btn btn-info">
+               {{quotes.upvote}}
+               <img src="https://bit.ly/3bJAp7L"(click)='minusVote(i)' name="downvote" class="btn btn-info">
+               {{quotes.downvote}}
+               <br><br>
                <button (click)='toggleDetails(i)' class="btn btn-primary">View Details</button>
                 <app-quotes-detail *ngIf='quotes.showDescription'[quotes]='quotes' (isComplete) = 'deletequotes($event,i)'></app-quotes-detail>
                 
