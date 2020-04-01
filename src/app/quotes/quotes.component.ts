@@ -9,10 +9,10 @@ import {Quotes} from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Quotes[]=[
-    new Quotes(1,'Paul','Lucky Stiff','"when you dont create things, you become defined by your tastes rather than ability. your tastes only narrow & exclude people. so create."',new Date(2020,4,1)),
-    new Quotes(2,'Rael',' Harold Abelson','"Programs must be written for people to read, and only incidentally for machines to execute"',new Date(2020,4,1)),
-    new Quotes(3,'Jane','Rick Cook,','"Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning."',new Date(2020,4,1)),
-    new Quotes(4,'Kennedy','Martin Fowler','“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”',new Date(2020,4,1))
+    new Quotes(1,'Paul','Lucky Stiff','"when you dont create things, you become defined by your tastes rather than ability. your tastes only narrow & exclude people. so create."',new Date(2020,4,1),0,0),
+    new Quotes(2,'Rael',' Harold Abelson','"Programs must be written for people to read, and only incidentally for machines to execute"',new Date(2020,4,1),0,0),
+    new Quotes(3,'Jane','Rick Cook,','"Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning."',new Date(2020,4,1),0,0),
+    new Quotes(4,'Kennedy','Martin Fowler','“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”',new Date(2020,4,1),0,0)
   ];
   deletequotes(isComplete,index){
     if(isComplete){
@@ -26,7 +26,19 @@ export class QuotesComponent implements OnInit {
   toggleDetails(index){
   this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
-  
+
+  addNewQuotes(quotes){
+    let quotesLength = this.quotes.length;
+    quotes.id=quotesLength+1;
+    quotes.completeDate = new Date(quotes.completeDate)
+    this.quotes.push(quotes)
+  }
+  addVote(index){
+    this.quotes[index].upvote ++;
+  }
+  minusVote(index){
+    this.quotes[index].downvote ++;
+  }
   constructor() { }
 
   ngOnInit(){

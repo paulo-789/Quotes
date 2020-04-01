@@ -15,7 +15,11 @@
          <div class="col-md-6">   
         <ol>
             <div *ngFor='let quotes of quotes;let i = index'>
-               <li> {{quotes.quotes}}</li>
+               <li appStrikethrough> {{quotes.quotes}}</li>
+               <button (click)='addVote(i)' name="upvote" class="btn btn-info">like</button>
+               <p> {{quotes.upvote}}</p>
+               <button (click)='minusVote(i)' name="downvote" class="btn btn-info">dislike</button>
+              <p>{{quotes.downvote}}</p>
                <button (click)='toggleDetails(i)' class="btn btn-primary">View Details</button>
                 <app-quotes-detail *ngIf='quotes.showDescription'[quotes]='quotes' (isComplete) = 'deletequotes($event,i)'></app-quotes-detail>
                 
@@ -24,7 +28,7 @@
     </div>
 
     <div class="col-md-6">
-    <app-quotes-form></app-quotes-form>
+    <app-quotes-form (addQuotes)="addNewQuotes($event)"></app-quotes-form>
     </div>
         </div> 
     </div>
