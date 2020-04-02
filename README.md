@@ -19,7 +19,7 @@ Inspiration Quotes is an app that contains Quotes to inspire poeple .It allows u
 
 
 ## Live Link
-
+ https://paulo-789.github.io/Quotes/
 
 ## Technologies used
 
