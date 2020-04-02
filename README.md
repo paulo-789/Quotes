@@ -1,27 +1,36 @@
-# Quotes
+# TITTLE
+ 
+ Inspiration Quotes
+
+ ## Author
+ Paul Onyango
+ A software developer.
+
+
+## Description
+Inspiration Quotes is an app that contains Quotes to inspire poeple .It allows users to see the author of the quote , when the quote was posted and who posted it.It also allows the users to like or dislike and most importaly users can add any quote they feel it can it can inspire someone.
+
+
+## Project set up
+ * Open the terminal in your device.
+ * git clone
+ * cd Quotes
+ * use code or atom to open
+
+
+## Live Link
+
+
+## Technologies used
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Behaviour Driven Development(BDD)
+The app contains Quotes ,It contains the thumbs up to like and the thumbs down  to dislike .It also contains a details button where one can view the details .You can also add the quote .One is require to fill in his/her name ,the author and the quote and submit.
 
-## Code scaffolding
+### Contribution
+ Feel free to air out you views of what you think I should improve on or what I should stop doing.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ ### Contacts
+  Email:paulnyango021@gmail.com
